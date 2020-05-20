@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Fragment.Frag_ListPhone">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_search_view"
+        android:inputType="text"
+        android:hint="Tìm kiếm ..."
+        android:maxLength="30"
+        android:imeOptions="actionSearch"
+        android:background="@drawable/shape_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/search_view"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_search"
+        android:layout_alignRight="@+id/edit_search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyl_lstPhone"
+        android:layout_below="@+id/edit_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/add_phone"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
